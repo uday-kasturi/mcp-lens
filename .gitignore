@@ -1,0 +1,28 @@
+# Cache and API responses
+cache/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+.venv/
+venv/
+
+# Logs
+*.log
+
+# Environment
+.env
+
+# Eval intermediates (keep only final results)
+eval_results/raw/
+eval_results/checkpoint*.json
+
+# Internal project tooling
+CLAUDE.md
+.claudeignore
+mcp-semantic-scanner-plan.md
+BUILD_LOG.md
+debug_json.py

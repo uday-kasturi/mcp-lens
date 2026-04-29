@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "mcp-scanner"
+version = "0.1.0"
+description = "Semantic MCP tool poisoning detector"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40.0",
+    "diskcache>=5.6.3",
+    "rich>=13.7.0",
+]
+
+[project.scripts]
+mcp-scan = "cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

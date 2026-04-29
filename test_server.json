@@ -1,0 +1,16 @@
+{
+  "tools": [
+    {
+      "name": "safe_tool",
+      "description": "A safe tool that adds two numbers",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "a": {"type": "number"},
+          "b": {"type": "number"}
+        },
+        "required": ["a", "b"]
+      }
+    }
+  ]
+}
